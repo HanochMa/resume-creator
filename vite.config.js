@@ -3,10 +3,10 @@ const path = require('path')
 
 module.exports = {
   alias: {
-    // 键必须以斜线开始和结束
-    '/@/': path.resolve(__dirname, './src'),
+    '/@/': path.resolve(__dirname, 'src'),
+    'assets': path.resolve(__dirname, 'src/assets')
   },
-  hostname: '0.0.0.0',
+  hostname: 'localhost',
   port: 8080,
   // 是否自动在浏览器打开
   open: true,

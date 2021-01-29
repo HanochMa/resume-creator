@@ -1,26 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
-  <div class="box1"></div>
+  <div id="app">
+    <GlobalHeader></GlobalHeader>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script lang="ts">
-import HelloWorld from './components/HelloWorld.vue';
 import { defineComponent } from 'vue';
+import GlobalHeader from './components/GlobalHeader.vue'
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld,
+    GlobalHeader
   },
 });
 </script>
 
-<style lang="less" scoped>
-@color:red;
-@k:100px;
-.box1{
-  width: @k;
-  height: @k;
-  background-color: @color; //测试less
-}
+<style lang="less">
+@import 'assets/style/index.less'; //初始化样式
+
 </style>
