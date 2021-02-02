@@ -1,5 +1,5 @@
 <template>
-  <el-header height="80px" class="header-container"> {{ title }} </el-header>
+  <el-footer class="footer-container"> footer </el-footer>
 </template>
 
 <script lang="ts">
@@ -14,16 +14,15 @@ export default defineComponent({
   },
   setup() {
     const user = 'abc';
-    return { user };
   },
 });
 </script>
 
 <style lang="less" scoped>
-.header-container {
+.footer-container {
   background-color: #fff;
   color: #333;
-  text-align: left;
-  line-height: 80px;
+  text-align: center;
+  line-height: 60px;
 }
 </style>
