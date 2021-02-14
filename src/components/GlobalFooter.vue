@@ -1,4 +1,5 @@
 <template>
+  <el-divider style="margin: 0px"></el-divider>
   <el-footer class="footer-container"> footer </el-footer>
 </template>
 
@@ -20,7 +21,6 @@ export default defineComponent({
 
 <style lang="less" scoped>
 .footer-container {
-  background-color: #fff;
   color: #333;
   text-align: center;
   line-height: 60px;

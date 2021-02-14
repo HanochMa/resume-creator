@@ -1,9 +1,10 @@
 <template>
   <el-main class="home">
     <div class="banner">
+      <div class="logo"></div>
       <h1 class="box">{{ data.slogan }}</h1>
-      <h4 class="box">{{ data.introduction }}</h4>
-      <div class="btn box">开始制作</div>
+      <div class="box">{{ data.introduction }}</div>
+      <div class="btn box">免费制作</div>
     </div>
     <div></div>
   </el-main>
@@ -15,8 +16,8 @@ export default defineComponent({
   name: 'Home',
   setup() {
     const data = reactive({
-      slogan: '这是标语',
-      introduction: '这是简介',
+      slogan: 'XX简历，简历制作管理专家',
+      introduction: '自动排版 · 12种模块组合 · 16种色系切换 · 3种隐私模式',
     });
     return { data };
   },
@@ -26,15 +27,14 @@ export default defineComponent({
 
 <style lang="less" scoped>
 @color: red;
-@k: 800px;
 .home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  min-height: @k;
-  background: linear-gradient(45deg, #feac5e, #c779d0, #4bc0c8); //测试less
 }
 .banner {
   width: 100%;
-  margin-top: 50px;
   text-align: center;
 }
 .box {
@@ -46,11 +46,11 @@ export default defineComponent({
   line-height: 60px;
   display: inline-block;
   border-radius: 60px;
-  background-color: gold;
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .btn:hover {
-  box-shadow: 2px 2px 5px grey;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
 }
 </style>

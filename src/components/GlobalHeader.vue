@@ -1,5 +1,9 @@
 <template>
-  <el-header height="80px" class="header-container"> {{ title }} </el-header>
+  <el-header class="header-container">
+    <div>{{ title }}</div>
+    <div></div>
+  </el-header>
+  <el-divider style="margin: 0px"></el-divider>
 </template>
 
 <script lang="ts">
@@ -21,9 +25,8 @@ export default defineComponent({
 
 <style lang="less" scoped>
 .header-container {
-  background-color: #fff;
   color: #333;
   text-align: left;
-  line-height: 80px;
+  line-height: 60px;
 }
 </style>

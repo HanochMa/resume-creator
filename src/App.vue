@@ -15,7 +15,7 @@ export default defineComponent({
   setup() {
     const data = reactive({
       header: {
-        title: '简历生成平台',
+        title: 'XX简历',
         option: [],
         avatar: '',
       },
@@ -31,4 +31,10 @@ export default defineComponent({
 
 <style lang="less">
 @import 'assets/style/index.less'; //初始化样式
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
 </style>
