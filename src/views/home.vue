@@ -1,12 +1,9 @@
 <template>
   <el-main class="home">
-    <div class="banner">
-      <div class="logo"></div>
-      <h1 class="box">{{ data.slogan }}</h1>
-      <div class="box">{{ data.introduction }}</div>
-      <div class="btn box">免费制作</div>
-    </div>
-    <div></div>
+    <div class="logo"></div>
+    <h2 class="box">{{ data.slogan }}</h2>
+    <div class="box">{{ data.introduction }}</div>
+    <div class="btn box">免费制作</div>
   </el-main>
 </template>
 
@@ -31,11 +28,15 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
-.banner {
-  width: 100%;
-  text-align: center;
+
+.logo {
+  width: 200px;
+  height: 200px;
+  background-image: url('../assets/images/logo.png');
+  background-size: 100% 100%;
 }
 .box {
   margin: 20px;
@@ -44,6 +45,7 @@ export default defineComponent({
   width: 220px;
   height: 60px;
   line-height: 60px;
+  text-align: center;
   display: inline-block;
   border-radius: 60px;
   background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
